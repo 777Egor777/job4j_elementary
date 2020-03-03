@@ -16,22 +16,23 @@ public class SqAreaTest {
     }
 
     @Test
-    public void square() {
-        double[] expected = {1, 0.25};
-        double[] out = {SqArea.square(4, 1),
-                        SqArea.square(2, 1)};
-        for(int i = 0; i < expected.length; ++i) {
-            Assert.assertEquals(expected[i], out[i], 0.01);
-        }
+    public void squareTest1() {
+        double expected = 1;
+        double out = SqArea.square(4, 1);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void squareTest2() {
+        double expected = 0.25;
+        double out = SqArea.square(2, 1);
+        Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void height() {
-        double[] expected = {1, 0.5};
-        double[] out = {SqArea.height(4, 1),
-                SqArea.height(2, 1)};
-        for(int i = 0; i < expected.length; ++i) {
-            Assert.assertEquals(expected[i], out[i], 0.01);
-        }
+        double expected = 1;
+        double out = SqArea.height(4, 1);
+        Assert.assertEquals(expected, out, 0.01);
     }
 }
