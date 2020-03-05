@@ -93,4 +93,14 @@ public class MatrixCheckTest {
         boolean expected = true;
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void whenDiagonal() {
+        char[][] input = {{'X', ' ', ' '},
+                {'X', 'X', 'X'},
+                {' ', ' ', 'S'}};
+        char[] result = MatrixCheck.extractDiagonal(input);
+        char[] expected = {'X', 'X', 'S'};
+        assertThat(result, is(expected));
+    }
 }
