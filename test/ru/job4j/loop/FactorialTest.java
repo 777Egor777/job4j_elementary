@@ -7,14 +7,14 @@ import static org.hamcrest.Matchers.is;
 public class FactorialTest {
 
     @Test
-    public void FactorialForZeroTest() {
+    public void factorialForZeroTest() {
         int rsl = Factorial.calc(0);
         int expected = 1;
         assertThat(rsl, is(expected));
     }
 
     @Test
-    public void FactorialForFiveTest() {
+    public void factorialForFiveTest() {
         int rsl = Factorial.calc(5);
         int expected = 120;
         assertThat(rsl, is(expected));

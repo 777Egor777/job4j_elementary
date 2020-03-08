@@ -6,7 +6,7 @@ public class Defragment {
             if (array[index] == null) {
                 int point = index;
 
-                while(point < array.length && array[point] == null) {
+                while (point < array.length && array[point] == null) {
                     point++;
                 }
 

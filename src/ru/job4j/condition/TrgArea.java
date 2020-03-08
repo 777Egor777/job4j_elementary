@@ -4,9 +4,7 @@ import static java.lang.Math.*;
 public class TrgArea {
     public static double area(double firstSide, double secondSide, double thirdSide) {
         double p = (firstSide + secondSide + thirdSide) / 2.0;
-        double rsl = sqrt(p) * sqrt(p - firstSide) *
-                     sqrt(p - secondSide) *
-                     sqrt(p - thirdSide);
+        double rsl = sqrt(p) * sqrt(p - firstSide) * sqrt(p - secondSide) * sqrt(p - thirdSide);
         return rsl;
     }
 

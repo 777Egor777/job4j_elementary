@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.is;
 public class SquareTest {
 
     @Test
-    public void WhenBoundIs3() {
+    public void whenBoundIs3() {
         int bound = 3;
         int[] result = Square.calculate(bound);
         int[] expected = {0, 1, 4};
@@ -16,7 +16,7 @@ public class SquareTest {
     }
 
     @Test
-    public void WhenBoundIs5() {
+    public void whenBoundIs5() {
         int bound = 5;
         int[] result = Square.calculate(bound);
         int[] expected = {0, 1, 4, 9, 16};

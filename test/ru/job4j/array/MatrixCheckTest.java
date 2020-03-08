@@ -42,8 +42,8 @@ public class MatrixCheckTest {
     @Test
     public void whenHasMonoHorizontalx4() {
         char[][] inputBoard = {{' ', ' '},
-                {'X', 'X', },
-                {' ', ' ',}};
+                {'X', 'X'},
+                {' ', ' '}};
         int inputRow = 1;
         boolean result = MatrixCheck.monoHorizontal(inputBoard, inputRow);
         boolean expected = true;
