@@ -28,7 +28,7 @@ public class Merge {
 
         while (j < right.length) {
             rsl[position] = right[j];
-            j++;
+            j = j + 1;
             position++;
         }
 
