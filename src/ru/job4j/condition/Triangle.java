@@ -33,9 +33,10 @@ public class Triangle {
         double secondSide = this.firstVertex.distance(this.thirdVertex);
         double thirdSide = this.thirdVertex.distance(this.secondVertex);
         if (Triangle.exist(firstSide, secondSide, thirdSide)) {
-            double p = Triangle.semiPerimeter(firstSide, secondSide, thirdSide);
-            result = sqrt(p) * sqrt(p - firstSide) * sqrt(p - secondSide)*
-                     sqrt(p - thirdSide);
+            double semiPerimeter = Triangle.semiPerimeter(firstSide, secondSide, thirdSide);
+            result = sqrt(semiPerimeter) * sqrt(semiPerimeter - firstSide)
+                    * sqrt(semiPerimeter - secondSide)
+                    * sqrt(semiPerimeter - thirdSide);
         }
         return result;
     }
