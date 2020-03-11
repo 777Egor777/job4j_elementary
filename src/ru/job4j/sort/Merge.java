@@ -3,11 +3,8 @@ package ru.job4j.sort;
 public class Merge {
     public int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
-        //First Array Pointer
         int i = 0;
-        //Second Array Pointer
         int j = 0;
-        //Position if rsl array
         int position = 0;
         while (i < left.length && j < right.length) {
             if (left[i] < right[j]) {
@@ -19,13 +16,11 @@ public class Merge {
             }
             position++;
         }
-
         while (i < left.length) {
             rsl[position] = left[i];
             i++;
             position++;
         }
-
         while (j < right.length) {
             rsl[position] = right[j];
             j = j + 1;
