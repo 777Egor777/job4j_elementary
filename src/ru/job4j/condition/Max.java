@@ -32,4 +32,19 @@ public class Max {
         result = Max.max(result, third);
         return result;
     }
+
+    /**
+     * Method calculate maximum
+     * of four numbers
+     * @param first - first nubmer
+     * @param second - second number
+     * @param third - third number
+     * @param fourth - third number
+     * @return maximum of these four numbers
+     */
+    public static int max(int first, int second, int third, int fourth) {
+        int result = Max.max(first, second, third);
+        result = Max.max(result, fourth);
+        return result;
+    }
 }

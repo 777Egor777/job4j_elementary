@@ -65,4 +65,10 @@ public class MaxTest {
         assertThat(Max.max(-3, -2, -1),
                 is(-1));
     }
+
+    @Test
+    public void max() {
+        assertThat(Max.max(-3, -2, -1, 27),
+                is(27));
+    }
 }
